@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferts - Cote d'Ivoire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Bouton de retour à la page d'accueil -->
+        <div class="d-flex justify-content-start mb-4">
+            <a href="index.html" class="btn btn-secondary">Retour à l'accueil</a>
+        </div>
+
+        <h1 class="text-center my-4">Transferts - Cote d'Ivoire</h1>
+
+        <!-- Boutons pour Envoi et Retrait -->
+        <div class="d-flex justify-content-center gap-3 mb-4">
+            <a href="cote_ivoire_envoi.html" class="btn btn-primary">Envoi</a>
+            <a href="cote_ivoire_retrait.html" class="btn btn-primary">Retrait</a>
+        </div>
+
+        <!-- Graphique pour afficher les bénéfices -->
+        <div class="chart-container mb-4">
+            <canvas id="beneficeChart"></canvas>
+        </div>
+
+        <!-- Tableau pour afficher l'historique des transactions -->
+        <div class="history-container">
+            <h2 class="text-center mb-3">Historique des Transactions</h2>
+            <table id="historyTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Montant</th>
+                        <th>Frais</th>
+                        <th>Bénéfice</th>
+                        <th>Type de Transfert</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les lignes seront ajoutées dynamiquement par JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="cote_ivoireScript.js"></script>
+</body>
+</html>
